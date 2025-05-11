@@ -1,4 +1,6 @@
 :root {
+    --font-family-base: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-family-title: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     --color-primary: #d73953;
     --color-black: #090909;
     --color-white: #ffffff;
@@ -7,16 +9,17 @@
     --text-color: var(--color-black);
 }
 
-html {
-    scroll-behavior: smooth;
+body {
+    font-family: var(--font-family-base);
+    color: var(--text-color);
 }
 
-body {
-    color: var(--text-color);
+h1,h2,h3,h4,h5,h6 {
+    font-family: var(--font-family-title);
 }
 
 a {
-    color: var(--text-color);
+    color: var(--color-primary);
 }
 
 .visually-hidden {
